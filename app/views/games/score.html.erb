@@ -1,5 +1,8 @@
+<div class="container w-100 m-3 p-3 ps-3 text-center justify-content-center">
+
 <h1>Result</h1>
 
-<p>Sorry but <%= @user_input %> can't be built out of <%= @letters %></p>
+<%# Show a message and create an if loop to show if 1: the word is an actual English word, and 2: every letter in the word appears in the grid, and 3: if word is not in the grid or if not valid%>
+<p><%= @message %></p></div>
 
-<%= @url %>
+  <%= link_to 'Play again ⬅️', new_path, class: "btn btn-secondary btn-lg btn-block mt-3" %>
